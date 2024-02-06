@@ -16,7 +16,7 @@ This repository contains an implementation of a neural part-of-speech (PoS) sequ
 
 **Figure 1:** Example input and output for part-of-speech tagging.
 
-## Task Summary
+## Objective Summary
 
 The task involves implementing a neural model that utilizes LSTM networks. The model architecture consists of a word-level embedding layer, followed by an LSTM layer, and a dense layer with softmax activation for label assignment. The model is trained on the English_EWT dataset from the Universal Dependencies collection. Additionally, the model is evaluated on both the validation/development and test sets provided in CoNLL-U format. Furthermore, the model is extended to support prediction of part-of-speech tags for newly inputted sentences by the user.
 
@@ -39,9 +39,11 @@ The used architecture includes:
 
 ![Model_Architecture](img/model_architecture.png)
 
+**Figure 2:** Schema of model architecture.
+
 ## Preprocessing
 
-Sentences longer than 128 words are preprocessed and removed during the training and evaluation of the models to simplify processing.
+Sentences longer than 128 words and multiwords are preprocessed and removed during the training and evaluation of the models to simplify processing.
 
 ## Usage
 
